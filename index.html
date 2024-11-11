@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amor Weddings - Elegance in Every Stitch</title>
+    <link rel="icon" href="public/logo/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+</head>
+<body>
+    <header id="header">
+        <nav>
+            <div class="logo-container">
+                <a href="#home"><img src="public/logo/amor-logo.png" alt="Amor Weddings Logo" class="logo"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-spinner-overlay">
+                <div class="hero-spinner"></div>
+            </div>
+            <video autoplay muted loop id="hero-video">
+                <source src="public/videos/banner-video-1.mp4" type="video/mp4">
+            </video>
+            <div class="hero-content">
+                <h1 class="hero-title">Amor Weddings</h1>
+                <p class="hero-subtitle">Elegance in Every Stitch</p>
+                <a href="#contact" class="cta-button">Book a Consultation</a>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2 class="section-title">About Amor Weddings</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>At Amor Weddings, we blend timeless elegance with contemporary style to create bespoke wedding attire that celebrates your unique love story. Our commitment to quality craftsmanship and personalized service ensures that every stitch reflects the beauty of your special day.</p>
+                        <p>With years of experience in the luxury wedding fashion industry, our team of skilled artisans and designers work tirelessly to bring your vision to life. We believe that your wedding attire should be as unique as your love story, and we're dedicated to making that a reality.</p>
+                    </div>
+                    <div class="about-image">
+                        <img src="images/placeholder.jpg" data-src="public\images\suits\suit-1.jpg" alt="Amor Weddings Studio" class="about-img">
+                    </div>
+                </div>
+                <div class="values">
+                    <div class="value-item">
+                        <i class="fas fa-gem"></i>
+                        <h3>Quality</h3>
+                        <p>Premium materials and impeccable craftsmanship</p>
+                    </div>
+                    <div class="value-item">
+                        <i class="fas fa-hand-holding-heart"></i>
+                        <h3>Personalization</h3>
+                        <p>Tailored designs to match your unique style</p>
+                    </div>
+                    <div class="value-item">
+                        <i class="fas fa-clock"></i>
+                        <h3>Timeless Elegance</h3>
+                        <p>Designs that stand the test of time</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio-section">
+            <div class="container">
+                <h2 class="section-title">Our Portfolio</h2>
+                <div class="portfolio-filter">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="suits">Suits</button>
+                    <button class="filter-btn" data-filter="traditionalwear">Traditional Wear</button>
+                </div>
+                <div class="portfolio-grid">
+                    <!-- Portfolio items will be dynamically added here -->
+                </div>
+                <div id="loading" class="loading-indicator">
+                    <div class="spinner"></div>
+                </div>
+            </div>
+            <div id="gallery-modal" class="gallery-modal">
+                <button class="close-modal">&times;</button>
+                <div class="gallery-content">
+                    <img src="" alt="" id="gallery-image">
+                    <div class="image-caption"></div>
+                </div>
+                <button class="nav-btn prev-btn">&lt;</button>
+                <button class="nav-btn next-btn">&gt;</button>
+            </div>
+        </section>
+
+        <section id="services" class="services-section">
+            <div class="container">
+                <h2 class="section-title">Our Services</h2>
+                <div class="services-grid">
+                    <div class="service-item">
+                        <i class="fas fa-cut"></i>
+                        <h3>Custom Tailoring</h3>
+                        <p>Bespoke wedding attire tailored to your unique style and measurements.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-pencil-alt"></i>
+                        <h3>Design Customization</h3>
+                        <p>Personalize every detail of your wedding dress or suit to match your vision.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-ruler-combined"></i>
+                        <h3>Expert Fitting</h3>
+                        <p>Multiple fittings to ensure the perfect fit for your big day.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-comments"></i>
+                        <h3>Style Consultation</h3>
+                        <p>Professional advice to help you choose the perfect style for your wedding.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonials-section">
+            <div class="container">
+                <h2 class="section-title">Client Testimonials</h2>
+                <div class="testimonial-slider">
+                    <div class="testimonial-item">
+                        <p>"Amor Weddings made my dream dress a reality. Their attention to detail and craftsmanship is unparalleled."</p>
+                        <div class="testimonial-author">
+                            <img src="images/placeholder.jpg" data-src="public/images/suits/suit-3.jpg" alt="Ajmal." class="author-img">
+                            <span>Ajmal.</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <p>"The team at Amor Weddings went above and beyond to ensure my suit was perfect. I couldn't be happier with the result."</p>
+                        <div class="testimonial-author">
+                            <img src="images/placeholder.jpg" data-src="public/images/traditionalwear/traditionalwear-6.jpg" alt="Mubarak." class="author-img">
+                            <span>Mubarak.</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <p>"From the initial consultation to the final fitting, Amor Weddings provided an exceptional experience. Highly recommended!"</p>
+                        <div class="testimonial-author">
+                            <img src="images/placeholder.jpg" data-src="public/images/suits/suit-7.jpg" alt="Ashfaq." class="author-img">
+                            <span>Ashfaq.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-nav">
+                    <button class="prev-testimonial"><i class="fas fa-chevron-left"></i></button>
+                    <button class="next-testimonial"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2 class="section-title">Contact Us</h2>
+                <div class="contact-content">
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Your Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Your Email</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone">
+                            <label for="phone">Phone Number</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" required></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-icon"><i class="fas fa-paper-plane"></i></span>
+                        </button>
+                    </form>
+                    <div class="contact-info">
+                        <h3>Get in Touch</h3>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <a href="https://maps.app.goo.gl/Y92A1VTv7vbXjJEp7" target="_blank">
+                                <p>4665+JR2, Payyanur, Kerala 670307</p>
+                            </a>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:9633888180"><p>(+91) 9633888180</p></a>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:info@amorweddings.com"><p>info@amorweddings.com</p></a>
+                        </div>
+                        <div class="social-icons-g">
+                            <!-- <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a> -->
+                            <a href="https://www.instagram.com/amor__weddings" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://wa.me/9633888180" target="_blank" aria-label="WhatsApp" class="social-icon whatsapp"><i class="fab fa-whatsapp"></i></a>
+                            <a href="tel:9633888180" target="_blank" aria-label="Call" class="social-icon phone"><i class="fas fa-phone"></i></a>
+                            <!-- <a href="#" target="_blank" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a> -->
+                            <!-- <a href="#" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <img src="public/logo/amor-logo.png" alt="Amor Weddings Logo" class="footer-logo-img">
+                    <p class="footer-tagline">Elegance in Every Stitch</p>
+                    <div class="footer-social">
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com/amor__weddings" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://wa.me/9633888180" target="_blank" aria-label="WhatsApp" class="social-icon whatsapp"><i class="fab fa-whatsapp"></i></a>
+                            <a href="tel:9633888180" target="_blank" aria-label="Call" class="social-icon phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- <div class="footer-newsletter">
+                    <h4>Subscribe to Our Newsletter</h4>
+                    <form id="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div> -->
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Amor Weddings. All rights reserved. Created by <a href="https://muhammedmuneer.onrender.com"><b>MMK.</b></a></p>
+                <div class="social-icons-mmk">
+                    <a href="https://www.facebook.com/muneer.k.161/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="tel:+917356928611" target="_blank" aria-label="Call" class="social-icon phone"><i class="fas fa-phone"></i></a>
+                    <a href="https://www.instagram.com/mmk_websites" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/+917356928611" target="_blank" aria-label="WhatsApp" class="social-icon whatsapp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://x.com/Muhammed200517" target="_blank" aria-label="X">
+                        <img src="public/icon/Twitter-X-White-Logo-PNG.png" alt="X logo" style="width: 16px; height: 16px;">
+                    </a>
+                </div>
+                <ul class="footer-legal">
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Cookies</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
